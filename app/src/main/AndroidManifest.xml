@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools">
+
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.RECORD_AUDIO" />
+
+    <application
+        android:name=".Database.Database"
+        android:allowBackup="true"
+        android:dataExtractionRules="@xml/data_extraction_rules"
+        android:fullBackupContent="@xml/backup_rules"
+        android:icon="@mipmap/ic_logo_round"
+        android:label="@string/app_name"
+        android:supportsRtl="true"
+        android:theme="@style/Theme.KiwiEnglish"
+        tools:targetApi="31">
+        <activity
+            android:name=".Statistics.StatisticActivity"
+            android:exported="false" />
+        <activity
+            android:name=".CourseHandling.LessonActivity"
+            android:exported="false" />
+        <activity
+            android:name=".CourseHandling.CourseActivity"
+            android:exported="false" />
+        <activity
+            android:name=".AccountSettings.AccountSettingsActivity"
+            android:exported="false" />
+        <activity
+            android:name=".LoginRegisterHandling.RestorePasswordActivity"
+            android:exported="false" />
+        <activity
+            android:name=".Information.InformationActivity"
+            android:exported="false" />
+        <activity
+            android:name=".MenuActivity"
+            android:exported="false" />
+        <activity
+            android:name=".TutorialActivity"
+            android:exported="false" />
+        <activity
+            android:name=".CourseListActivity"
+            android:exported="false" />
+        <activity
+            android:name=".LoginRegisterHandling.RegisterActivity"
+            android:exported="false" />
+        <activity
+            android:name=".LoginRegisterHandling.LoginActivity"
+            android:exported="false" />
+        <activity
+            android:name=".WelcomeActivity"
+            android:exported="true"
+            android:noHistory="true">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+    </application>
+
+</manifest>

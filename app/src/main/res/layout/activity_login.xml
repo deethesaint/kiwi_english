@@ -1,0 +1,122 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".LoginRegisterHandling.LoginActivity">
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/login_activity_guideline_top"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        app:layout_constraintGuide_percent="0.2"/>
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/login_activity_guideline_left"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        app:layout_constraintGuide_percent="0.1"/>
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/login_activity_guideline_right"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        app:layout_constraintGuide_percent="0.9"/>
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/login_activity_guideline_bottom"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        app:layout_constraintGuide_percent="0.8"/>
+
+    <TextView
+        app:layout_constraintTop_toBottomOf="@id/login_activity_guideline_top"
+        app:layout_constraintLeft_toRightOf="@id/login_activity_guideline_left"
+        android:text="Chào mừng đến với Kiwi English!\nHãy đăng nhập..."
+        style="@style/headerTextView"
+        />
+
+    <EditText
+        android:drawableLeft="@drawable/baseline_account_box_24"
+        android:drawablePadding="10dp"
+        android:id="@+id/login_activity_username_edtText"
+        app:layout_constraintLeft_toRightOf="@id/login_activity_guideline_left"
+        app:layout_constraintRight_toLeftOf="@id/login_activity_guideline_right"
+        app:layout_constraintTop_toBottomOf="@id/login_activity_guideline_top"
+        app:layout_constraintBottom_toTopOf="@id/login_activity_password_edtText"
+        app:layout_constraintWidth_percent="0.8"
+        style="@style/EditableEditText"
+        android:hint="Username"
+        android:inputType="text"
+        app:layout_constraintVertical_chainStyle="packed"/>
+
+    <EditText
+        android:drawableLeft="@drawable/baseline_password_24"
+        android:drawablePadding="10dp"
+        android:id="@+id/login_activity_password_edtText"
+        style="@style/EditableEditText"
+        android:hint="Password"
+        android:inputType="textPassword"
+        app:layout_constraintLeft_toRightOf="@id/login_activity_guideline_left"
+        app:layout_constraintRight_toLeftOf="@id/login_activity_guideline_right"
+        app:layout_constraintTop_toBottomOf="@id/login_activity_username_edtText"
+        app:layout_constraintBottom_toTopOf="@id/login_activity_nextTimeLogged_checkBox"
+        app:layout_constraintWidth_percent="0.8"
+        app:layout_constraintVertical_chainStyle="packed" />
+
+    <CheckBox
+        android:id="@+id/login_activity_nextTimeLogged_checkBox"
+        app:layout_constraintTop_toBottomOf="@id/login_activity_password_edtText"
+        app:layout_constraintLeft_toRightOf="@id/login_activity_guideline_left"
+        app:layout_constraintBottom_toBottomOf="@id/login_activity_guideline_bottom"
+        android:layout_marginTop="8dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Tự động đăng nhập lần sau"
+        android:textColor="@color/black"
+        app:layout_constraintVertical_chainStyle="packed"
+        android:buttonTint="@color/second_base_color"/>
+
+    <Button
+        android:id="@+id/login_activity_forgot_Btn"
+        app:layout_constraintBottom_toBottomOf="@id/login_activity_guideline_bottom"
+        app:layout_constraintLeft_toRightOf="@id/login_activity_guideline_left"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Quên mật khẩu?"
+        android:textSize="16dp"
+        android:textStyle="bold"
+        android:textAllCaps="false"
+        android:background="@android:color/transparent"
+        />
+
+    <Button
+        android:id="@+id/login_activity_login_Btn"
+        android:layout_width="75dp"
+        android:layout_height="75dp"
+        android:layout_marginTop="8dp"
+        android:drawableLeft="@drawable/baseline_start_24"
+        app:layout_constraintRight_toLeftOf="@id/login_activity_guideline_right"
+        app:layout_constraintTop_toBottomOf="@id/login_activity_password_edtText"
+        android:background="@drawable/designed_btn"
+        />
+
+    <Button
+        android:id="@+id/login_activity_register_btn"
+        app:layout_constraintTop_toBottomOf="@id/login_activity_guideline_bottom"
+        app:layout_constraintLeft_toRightOf="@id/login_activity_guideline_left"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintRight_toLeftOf="@id/login_activity_guideline_right"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Chưa có tài khoản? Đăng ký ngay"
+        android:textSize="16dp"
+        android:textStyle="bold"
+        android:textAllCaps="false"
+        android:background="@android:color/transparent"/>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

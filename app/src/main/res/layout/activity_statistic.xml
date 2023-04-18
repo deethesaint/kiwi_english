@@ -1,0 +1,108 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Statistics.StatisticActivity">
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/stats_atvt_top_gl"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        app:layout_constraintGuide_percent="0.1"/>
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/stats_atvt_bottom_gl"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        app:layout_constraintGuide_percent="0.9"/>
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/stats_atvt_left_gl"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        app:layout_constraintGuide_percent="0.1"/>
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/stats_atvt_right_gl"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        app:layout_constraintGuide_percent="0.9"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintLeft_toRightOf="@id/stats_atvt_left_gl"
+        app:layout_constraintRight_toLeftOf="@id/stats_atvt_right_gl"
+        app:layout_constraintBottom_toTopOf="@id/stats_atvt_top_gl"
+        android:textSize="22sp"
+        android:text="Thống kê học tập"/>
+
+    <TextView
+        android:id="@+id/stats_atvt_courses_registered_tv"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintTop_toBottomOf="@id/stats_atvt_top_gl"
+        app:layout_constraintLeft_toRightOf="@id/stats_atvt_left_gl"
+        android:text="Tổng số khóa học đã đăng ký: "
+        android:textSize="18sp"
+        android:textColor="@color/base_color"
+        android:textStyle="bold"
+        android:layout_marginTop="120dp"/>
+
+    <TextView
+        android:id="@+id/stats_atvt_courses_attended_tv"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintTop_toBottomOf="@id/stats_atvt_courses_registered_tv"
+        app:layout_constraintLeft_toRightOf="@id/stats_atvt_left_gl"
+        android:text="Tổng lần tham gia khóa học: "
+        android:textSize="18sp"
+        android:textColor="@color/base_color"
+        android:textStyle="bold"
+        android:layout_marginTop="10dp"/>
+
+    <TextView
+        android:id="@+id/stats_atvt_correct_answer_tv"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintTop_toBottomOf="@id/stats_atvt_courses_attended_tv"
+        app:layout_constraintLeft_toRightOf="@id/stats_atvt_left_gl"
+        android:text="Tổng số câu trả lời đúng: "
+        android:textSize="18sp"
+        android:textColor="#158A00"
+        android:textStyle="bold"
+        android:layout_marginTop="10dp"/>
+
+    <TextView
+        android:id="@+id/stats_atvt_wrong_answer_tv"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintTop_toBottomOf="@id/stats_atvt_correct_answer_tv"
+        app:layout_constraintLeft_toRightOf="@id/stats_atvt_left_gl"
+        android:text="Tổng số câu trả lời sai: "
+        android:textSize="18sp"
+        android:textColor="@color/wrong_answer_color"
+        android:textStyle="bold"
+        android:layout_marginTop="10dp"/>
+
+    <TextView
+        android:id="@+id/stats_atvt_correct_answer_nbr_tv"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintTop_toBottomOf="@id/stats_atvt_wrong_answer_tv"
+        app:layout_constraintLeft_toRightOf="@id/stats_atvt_left_gl"
+        android:text="Tỷ lệ chính xác: "
+        android:textSize="18sp"
+        android:textColor="#20C103"
+        android:textStyle="bold"
+        android:layout_marginTop="10dp"/>
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

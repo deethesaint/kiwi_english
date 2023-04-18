@@ -1,0 +1,242 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".AccountSettings.AccountSettingsActivity">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <androidx.constraintlayout.widget.Guideline
+            android:id="@+id/account_settings_atvt_top_gl"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            app:layout_constraintGuide_percent="0.1"/>
+
+        <androidx.constraintlayout.widget.Guideline
+            android:id="@+id/account_settings_atvt_bottom_gl"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            app:layout_constraintGuide_percent="0.9"/>
+
+        <androidx.constraintlayout.widget.Guideline
+            android:id="@+id/account_settings_atvt_left_gl"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            app:layout_constraintGuide_percent="0.1"/>
+
+        <androidx.constraintlayout.widget.Guideline
+            android:id="@+id/account_settings_atvt_right_gl"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            app:layout_constraintGuide_percent="0.9"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Cài đặt tài khoản"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintLeft_toRightOf="@id/account_settings_atvt_left_gl"
+            app:layout_constraintRight_toLeftOf="@id/account_settings_atvt_right_gl"
+            app:layout_constraintBottom_toTopOf="@id/account_settings_atvt_top_gl"
+            android:textSize="24sp"/>
+
+        <TextView
+            android:id="@+id/account_settings_atvt_tv_ac"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:text="Tài khoản"
+            app:layout_constraintTop_toBottomOf="@id/account_settings_atvt_top_gl"
+            app:layout_constraintLeft_toRightOf="@id/account_settings_atvt_left_gl"
+            android:textSize="24sp" />
+
+        <EditText
+            android:id="@+id/account_settings_atvt_edt_ac"
+            android:layout_width="0dp"
+            android:layout_height="45dp"
+            android:background="@drawable/rounded_edttext"
+            app:layout_constraintTop_toBottomOf="@id/account_settings_atvt_tv_ac"
+            app:layout_constraintLeft_toRightOf="@id/account_settings_atvt_left_gl"
+            app:layout_constraintRight_toLeftOf="@id/account_settings_atvt_right_gl"
+            app:layout_constraintBottom_toTopOf="@id/account_settings_atvt_tv_id"
+            android:textColor="@color/light_gray"/>
+
+        <TextView
+            android:id="@+id/account_settings_atvt_tv_id"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:text="ID"
+            app:layout_constraintTop_toBottomOf="@id/account_settings_atvt_edt_ac"
+            app:layout_constraintLeft_toRightOf="@id/account_settings_atvt_left_gl"
+            android:textSize="24sp"/>
+
+        <EditText
+            android:id="@+id/account_settings_atvt_edt_id"
+            android:layout_width="0dp"
+            android:layout_height="45dp"
+            android:background="@drawable/rounded_edttext"
+            app:layout_constraintTop_toBottomOf="@id/account_settings_atvt_tv_id"
+            app:layout_constraintLeft_toRightOf="@id/account_settings_atvt_left_gl"
+            app:layout_constraintRight_toLeftOf="@id/account_settings_atvt_right_gl"
+            app:layout_constraintBottom_toTopOf="@id/account_settings_atvt_tv_mail"
+            android:textColor="@color/light_gray"
+            />
+
+        <TextView
+            android:id="@+id/account_settings_atvt_tv_mail"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:text="e-Mail"
+            app:layout_constraintTop_toBottomOf="@id/account_settings_atvt_edt_id"
+            app:layout_constraintLeft_toRightOf="@id/account_settings_atvt_left_gl"
+            app:layout_constraintBottom_toTopOf="@id/account_settings_atvt_edt_mail"
+            android:textSize="24sp"/>
+
+        <EditText
+            android:id="@+id/account_settings_atvt_edt_mail"
+            android:layout_width="0dp"
+            android:layout_height="45dp"
+            android:background="@drawable/rounded_edttext"
+            app:layout_constraintTop_toBottomOf="@id/account_settings_atvt_tv_mail"
+            app:layout_constraintLeft_toRightOf="@id/account_settings_atvt_left_gl"
+            app:layout_constraintRight_toLeftOf="@id/account_settings_atvt_right_gl"
+            app:layout_constraintBottom_toTopOf="@id/account_settings_atvt_btn_changepswrd"
+            android:textColor="@color/black"
+            android:hint="Cập nhật e-mail tại đây"/>
+
+        <Button
+            android:id="@+id/account_settings_atvt_btn_changepswrd"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="30dp"
+            android:background="@drawable/designed_btn"
+            android:text="Đổi mật khẩu"
+            android:textSize="20sp"
+            android:textAllCaps="false"
+            app:layout_constraintTop_toBottomOf="@id/account_settings_atvt_edt_mail"
+            app:layout_constraintLeft_toRightOf="@id/account_settings_atvt_left_gl" />
+
+        <Button
+            android:id="@+id/account_settings_atvt_btn_confirm"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_margin="30dp"
+            app:layout_constraintBottom_toTopOf="@id/account_settings_atvt_bottom_gl"
+            app:layout_constraintLeft_toRightOf="@id/account_settings_atvt_left_gl"
+            app:layout_constraintRight_toLeftOf="@id/account_settings_atvt_right_gl"
+            android:text="Xác nhận thay đổi"
+            android:textSize="20sp"
+            android:textAllCaps="false"
+            android:background="@drawable/designed_btn"/>
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:id="@+id/account_settings_atvt_changepswrd_layout"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        tools:visibility="visible"
+        android:visibility="gone">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="22sp"
+            android:text="Đổi mật khẩu"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintLeft_toRightOf="@id/account_settings_atvt_left_gl2"
+            app:layout_constraintRight_toLeftOf="@id/account_settings_atvt_right_gl2"
+            app:layout_constraintBottom_toTopOf="@id/account_settings_atvt_top_gl2"/>
+
+        <androidx.constraintlayout.widget.Guideline
+            android:id="@+id/account_settings_atvt_top_gl2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            app:layout_constraintGuide_percent="0.1"/>
+
+        <androidx.constraintlayout.widget.Guideline
+            android:id="@+id/account_settings_atvt_bottom_gl2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            app:layout_constraintGuide_percent="0.9"/>
+
+        <androidx.constraintlayout.widget.Guideline
+            android:id="@+id/account_settings_atvt_left_gl2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            app:layout_constraintGuide_percent="0.1"/>
+
+        <androidx.constraintlayout.widget.Guideline
+            android:id="@+id/account_settings_atvt_right_gl2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            app:layout_constraintGuide_percent="0.9"/>
+
+
+
+        <EditText
+            android:id="@+id/account_settings_atvt_edt_current_password"
+            style="@style/EditableEditText"
+            app:layout_constraintTop_toBottomOf="@id/account_settings_atvt_top_gl2"
+            app:layout_constraintLeft_toRightOf="@id/account_settings_atvt_left_gl2"
+            app:layout_constraintRight_toLeftOf="@id/account_settings_atvt_right_gl2"
+            app:layout_constraintBottom_toTopOf="@id/account_settings_atvt_edt_password"
+            app:layout_constraintVertical_chainStyle="packed"
+            android:drawableLeft="@drawable/baseline_password_24"
+            android:drawablePadding="10dp"
+            android:hint="Current password"
+            android:inputType="textPassword" />
+
+        <EditText
+            android:id="@+id/account_settings_atvt_edt_password"
+            style="@style/EditableEditText"
+            app:layout_constraintTop_toBottomOf="@id/account_settings_atvt_edt_current_password"
+            app:layout_constraintLeft_toRightOf="@id/account_settings_atvt_left_gl2"
+            app:layout_constraintRight_toLeftOf="@id/account_settings_atvt_right_gl2"
+            app:layout_constraintBottom_toTopOf="@id/account_settings_atvt_edt_repass"
+            app:layout_constraintVertical_chainStyle="packed"
+            android:drawableLeft="@drawable/baseline_password_24"
+            android:drawablePadding="10dp"
+            android:hint="New password"
+            android:inputType="textPassword" />
+
+        <EditText
+            android:id="@+id/account_settings_atvt_edt_repass"
+            style="@style/EditableEditText"
+            app:layout_constraintTop_toBottomOf="@id/account_settings_atvt_edt_password"
+            app:layout_constraintLeft_toRightOf="@id/account_settings_atvt_left_gl2"
+            app:layout_constraintRight_toLeftOf="@id/account_settings_atvt_right_gl2"
+            app:layout_constraintBottom_toTopOf="@id/account_settings_atvt_btn_confirmChangepassword"
+            android:drawableLeft="@drawable/baseline_password_24"
+            android:drawablePadding="10dp"
+            android:hint="re-New password"
+            android:inputType="textPassword"
+            />
+
+        <Button
+            android:id="@+id/account_settings_atvt_btn_confirmChangepassword"
+            android:layout_width="75dp"
+            android:layout_height="75dp"
+            android:layout_marginTop="8dp"
+            app:layout_constraintTop_toBottomOf="@id/account_settings_atvt_edt_repass"
+            app:layout_constraintRight_toLeftOf="@id/account_settings_atvt_right_gl2"
+            app:layout_constraintBottom_toTopOf="@id/account_settings_atvt_bottom_gl2"
+            app:layout_constraintVertical_chainStyle="packed"
+            android:background="@drawable/designed_btn"
+            android:drawableLeft="@drawable/baseline_start_24"/>
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

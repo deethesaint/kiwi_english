@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    tools:context=".WelcomeActivity">
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/welcome_activity_guideline_top"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        app:layout_constraintGuide_percent="0.2"/>
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/welcome_activity_guideline_left"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        app:layout_constraintGuide_percent="0.15"/>
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/welcome_activity_guideline_right"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        app:layout_constraintGuide_percent="0.85"/>
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/welcome_activity_guideline_bottom"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        app:layout_constraintGuide_percent="0.65"/>
+
+
+    <ImageView
+        app:layout_constraintLeft_toRightOf="@+id/welcome_activity_guideline_left"
+        app:layout_constraintRight_toLeftOf="@id/welcome_activity_guideline_right"
+        app:layout_constraintTop_toBottomOf="@id/welcome_activity_guideline_top"
+        app:layout_constraintHeight_percent="0.45"
+        app:layout_constraintWidth_percent="0.45"
+        android:layout_height="0dp"
+        android:layout_width="0dp"
+        android:src="@mipmap/ic_logo" />
+
+    <ProgressBar
+        app:layout_constraintLeft_toRightOf="@id/welcome_activity_guideline_left"
+        app:layout_constraintRight_toLeftOf="@id/welcome_activity_guideline_right"
+        app:layout_constraintTop_toBottomOf="@id/welcome_activity_guideline_bottom"
+        android:id="@+id/activity_welcome_pb"
+        android:layout_height="20dp"
+        android:layout_width="0dp"
+        app:layout_constraintWidth_percent="0.8"
+        android:progress="@integer/material_motion_duration_long_1"
+        android:progressBackgroundTint="@color/second_base_color"
+        android:progressTint="@color/second_base_color"
+        style="@style/Widget.AppCompat.ProgressBar.Horizontal"
+        android:indeterminateOnly="true"/>
+
+    <TextView
+        app:layout_constraintTop_toBottomOf="@id/activity_welcome_pb"
+        app:layout_constraintLeft_toRightOf="@id/welcome_activity_guideline_left"
+        app:layout_constraintRight_toLeftOf="@id/welcome_activity_guideline_right"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Vui lòng chờ..."
+        android:textColor="@color/black"
+        android:textSize="20dp"
+        android:layout_gravity="center"/>
+
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>
