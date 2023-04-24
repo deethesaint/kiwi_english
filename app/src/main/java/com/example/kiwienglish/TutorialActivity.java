@@ -31,6 +31,7 @@ public class TutorialActivity extends AppCompatActivity {
                 account.setNew(false);
                 realm.commitTransaction();
                 Intent intent = new Intent(TutorialActivity.this, MenuActivity.class);
+                startActivity(intent);
             }
         });
 
