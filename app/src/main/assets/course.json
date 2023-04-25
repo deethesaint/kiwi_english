@@ -170,149 +170,77 @@
       },
       {
         "lesson_id": "C1BL2",
-        "lesson_name": "The Numbers",
-        "lesson_description": "Chúng ta sẽ tiến hành tiếp xúc với các con số trong tiếng Anh",
+        "lesson_name": "Greetings!",
+        "lesson_description": "Hãy chào và hỏi thăm nhau nào!",
         "content_list": [
           {
             "content_id": "C1BL2C1",
-            "data": "0",
-            "speech": "zero"
+            "data": "Hello",
+            "speech": "hello"
           },
           {
             "content_id": "C1BL2C2",
-            "data": "1",
-            "speech": "one"
+            "data": "Hi",
+            "speech": "hi"
           },
           {
             "content_id": "C1BL2C3",
-            "data": "2",
-            "speech": "two"
+            "data": "How are you?",
+            "speech": "how are you"
           },
           {
             "content_id": "C1BL2C4",
-            "data": "3",
-            "speech": "three"
+            "data": "I'm fine, thank you!",
+            "speech": "i'm fine, thank you"
           },
           {
             "content_id": "C1BL2C5",
-            "data": "4",
-            "speech": "four"
+            "data": "Good morning!",
+            "speech": "good morning"
           },
           {
             "content_id": "C1BL2C6",
-            "data": "5",
-            "speech": "five"
+            "data": "Good evening!",
+            "speech": "good evening"
           },
           {
             "content_id": "C1BL2C7",
-            "data": "6",
-            "speech": "six"
+            "data": "The weather is good! Isn't it?",
+            "speech": "the weather is good! isn't it?"
           },
           {
             "content_id": "C1BL2C8",
-            "data": "7",
-            "speech": "seven"
+            "data": "Hi Dave, how are you?",
+            "speech": "hi Dave, how are you"
           },
           {
             "content_id": "C1BL2C9",
-            "data": "8",
-            "speech": "eight"
-          },
-          {
-            "content_id": "C1BL2C10",
-            "data": "9",
-            "speech": "nine"
-          },
-          {
-            "content_id": "C1BL2C11",
-            "data": "10",
-            "speech": "ten"
-          },
-          {
-            "content_id": "C1BL2C12",
-            "data": "100",
-            "speech": "one hundred"
-          },
-          {
-            "content_id": "C1BL2C13",
-            "data": "1.000",
-            "speech": "one thousand"
-          },
-          {
-            "content_id": "C1BL2C14",
-            "data": "1.000.000",
-            "speech": "one million"
+            "data": "I feel so good today. Let's hang out!",
+            "speech": "i feel so good today. let's hang out"
           }
         ],
         "choice": [
           {
-            "choice_id": "C1BL2M1",
-            "first": "3.000.000",
-            "option1": "three",
-            "option2": "three billion",
-            "option3": "three million",
-            "option4": "three hundred",
-            "answer": "three million"
-          },
-          {
-            "choice_id": "C1BL2M2",
-            "first": "7.100.000",
-            "option1": "seventy and one million",
-            "option2": "seven one hundred",
-            "option3": "seven hundred and one million",
-            "option4": "seven million and one hundred thousand",
-            "answer": "seven million and one hundred thousand"
-          },
-          {
-            "choice_id": "C1BL2M3",
-            "first": "25.000",
-            "option1": "two five thousand",
-            "option2": "two fifth thousand",
-            "option3": "twenty five thousand",
-            "option4": "twenty fifth thousand",
-            "answer": "twenty five thousand"
-          },
-          {
-            "choice_id": "C1BL2M4",
-            "first": "100",
-            "option1": "one hundred",
-            "option2": "one thousand",
-            "option3": "one billion",
-            "option4": "ten hundred",
-            "answer": "one hundred"
-          },
-          {
             "choice_id": "C1BL2M5",
-            "first": "10.000.000",
-            "option1": "ten thousand",
-            "option2": "ten million",
-            "option3": "ten",
-            "option4": "ten hundred",
-            "answer": "ten million"
+            "first": "Hi, how are you today?",
+            "option1": "I don't do that",
+            "option2": "The weather is good",
+            "option3": "I don't know",
+            "option4": "I'm good. How about you?",
+            "answer": "I'm good. How about you?"
           }
         ],
         "filling": [
           {
             "filling_id": "C1BL2F1",
-            "question": "100 is one ...",
-            "answer": "hundred"
+            "question": "How ... you?",
+            "answer": "are"
           },
           {
             "filling_id": "C1BL2F2",
-            "question": "5.000 is five ...",
-            "answer": "thousand"
-          },
-          {
-            "filling_id": "C1BL2F3",
-            "question": "..000 is ten thousand",
-            "answer": "10"
-          },
-          {
-            "filling_id": "C1BL2F4",
-            "question": "1.000.000 is one ...",
-            "answer": "million"
+            "question": "Emma: Hi Dave! How are you today?\nDave: Hi Emma, I'm ... . Let's hang out!",
+            "answer": "fine"
           }
-
         ],
         "speaking": [
           {
