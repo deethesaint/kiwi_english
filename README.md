@@ -45,7 +45,7 @@ Here are some basic features :D
 </table>
 In development:
 <ul>
-<li>Firebase Database: Currently, the application still using Realm Database which located in user device storage, to simulate the login, register activities and store course data</li>
+<li>Firebase Database: Currently, the application is still using Realm Database which is located in user device storage, to simulate the login, register activities and store course data</li>
 <li>Azure Speech Services: Really really hard to implement this fucking thing, so I'm thinking about some other choices, Google Cloud Speech API is one of them :D</li>
 <li>Natural Language Processing: This is the coolest thing in the app (If I finish it :D). There are 2 choices, the first one is Stanford NPL (Hard to implement), and the last one is Google NPL (Ez to use)</li>
 <li>UI, Logic optimizing</li>
