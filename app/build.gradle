@@ -10,8 +10,8 @@ android {
         applicationId "com.example.kiwienglish"
         minSdk 26
         targetSdk 33
-        versionCode 6
-        versionName "0.3.2b"
+        versionCode 7
+        versionName "0.3.3a"
 
         testInstrumentationRunner "androidx.test.runner.AndroidJUnitRunner"
     }

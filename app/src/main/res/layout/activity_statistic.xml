@@ -33,6 +33,209 @@
         android:layout_height="wrap_content"
         android:orientation="vertical"
         app:layout_constraintGuide_percent="0.9"/>
+    
+    <androidx.cardview.widget.CardView
+        android:id="@+id/stats_atvt_cd1"
+        android:layout_width="0dp"
+        android:layout_height="105dp"
+        app:cardCornerRadius="15dp"
+        android:layout_marginTop="10dp"
+        app:layout_constraintTop_toBottomOf="@id/stats_atvt_top_gl"
+        app:layout_constraintLeft_toRightOf="@id/stats_atvt_left_gl"
+        app:layout_constraintRight_toLeftOf="@id/stats_atvt_right_gl"
+        app:layout_constraintBottom_toTopOf="@id/stats_atvt_cd2">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Tổng số khóa học đã đăng ký"
+            android:textStyle="bold"
+            android:layout_marginTop="10dp"
+            android:textSize="22sp"
+            android:background="@android:color/transparent"
+            android:textAlignment="center"
+            android:textColor="#46A4A4"
+            android:shadowDx="1"
+            android:shadowDy="1"
+            android:shadowRadius="2"
+            android:shadowColor="@color/second_base_color"/>
+
+        <TextView
+            android:id="@+id/stats_atvt_courses_registered_tv"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textStyle="bold"
+            android:layout_marginTop="50dp"
+            android:textSize="32sp"
+            android:background="@android:color/transparent"
+            android:textAlignment="center"
+            android:textColor="#46A4A4"/>
+
+    </androidx.cardview.widget.CardView>
+
+    <androidx.cardview.widget.CardView
+        android:id="@+id/stats_atvt_cd2"
+        android:layout_width="0dp"
+        android:layout_height="105dp"
+        app:cardCornerRadius="15dp"
+        android:layout_marginTop="10dp"
+        app:layout_constraintTop_toBottomOf="@id/stats_atvt_cd1"
+        app:layout_constraintLeft_toRightOf="@id/stats_atvt_left_gl"
+        app:layout_constraintRight_toLeftOf="@id/stats_atvt_right_gl"
+        app:layout_constraintBottom_toTopOf="@id/stats_atvt_cd3">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Tổng số lần tham gia khóa học"
+            android:textStyle="bold"
+            android:layout_marginTop="10dp"
+            android:textSize="22sp"
+            android:background="@android:color/transparent"
+            android:textAlignment="center"
+            android:textColor="#2196F3"
+            android:shadowDx="1"
+            android:shadowDy="1"
+            android:shadowRadius="2"
+            android:shadowColor="@color/second_base_color"
+            />
+
+        <TextView
+            android:id="@+id/stats_atvt_courses_attended_tv"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textStyle="bold"
+            android:layout_marginTop="50dp"
+            android:textSize="32sp"
+            android:background="@android:color/transparent"
+            android:textAlignment="center"
+            android:textColor="#2196F3"
+            />
+
+    </androidx.cardview.widget.CardView>
+
+    <androidx.cardview.widget.CardView
+        android:id="@+id/stats_atvt_cd3"
+        android:layout_width="0dp"
+        android:layout_height="105dp"
+        app:cardCornerRadius="15dp"
+        android:layout_marginTop="10dp"
+        app:layout_constraintTop_toBottomOf="@id/stats_atvt_cd2"
+        app:layout_constraintLeft_toRightOf="@id/stats_atvt_left_gl"
+        app:layout_constraintRight_toLeftOf="@id/stats_atvt_right_gl"
+        app:layout_constraintBottom_toTopOf="@id/stats_atvt_cd4">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Số câu trả lời đúng"
+            android:textStyle="bold"
+            android:layout_marginTop="10dp"
+            android:textSize="22sp"
+            android:background="@android:color/transparent"
+            android:textAlignment="center"
+            android:textColor="#4CAF50"
+            android:shadowDx="1"
+            android:shadowDy="1"
+            android:shadowRadius="2"
+            android:shadowColor="@color/second_base_color"
+            />
+
+        <TextView
+            android:id="@+id/stats_atvt_correct_answer_tv"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textStyle="bold"
+            android:layout_marginTop="50dp"
+            android:textSize="32sp"
+            android:background="@android:color/transparent"
+            android:textAlignment="center"
+            android:textColor="#4CAF50"
+            />
+
+    </androidx.cardview.widget.CardView>
+
+    <androidx.cardview.widget.CardView
+        android:id="@+id/stats_atvt_cd4"
+        android:layout_width="0dp"
+        android:layout_height="105dp"
+        app:cardCornerRadius="15dp"
+        android:layout_marginTop="10dp"
+        app:layout_constraintTop_toBottomOf="@id/stats_atvt_cd3"
+        app:layout_constraintLeft_toRightOf="@id/stats_atvt_left_gl"
+        app:layout_constraintRight_toLeftOf="@id/stats_atvt_right_gl"
+        app:layout_constraintBottom_toTopOf="@id/stats_atvt_cd5">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Số câu trả lời sai"
+            android:textStyle="bold"
+            android:layout_marginTop="10dp"
+            android:textSize="22sp"
+            android:background="@android:color/transparent"
+            android:textAlignment="center"
+            android:textColor="#F44336"
+            android:shadowDx="1"
+            android:shadowDy="1"
+            android:shadowRadius="2"
+            android:shadowColor="@color/second_base_color"
+            />
+
+        <TextView
+            android:id="@+id/stats_atvt_wrong_answer_tv"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textStyle="bold"
+            android:layout_marginTop="50dp"
+            android:textSize="32sp"
+            android:background="@android:color/transparent"
+            android:textAlignment="center"
+            android:textColor="#F44336"
+            />
+
+    </androidx.cardview.widget.CardView>
+
+    <androidx.cardview.widget.CardView
+        android:id="@+id/stats_atvt_cd5"
+        android:layout_width="0dp"
+        android:layout_height="105dp"
+        app:cardCornerRadius="15dp"
+        android:layout_marginTop="10dp"
+        app:layout_constraintTop_toBottomOf="@id/stats_atvt_cd4"
+        app:layout_constraintLeft_toRightOf="@id/stats_atvt_left_gl"
+        app:layout_constraintRight_toLeftOf="@id/stats_atvt_right_gl"
+        app:layout_constraintBottom_toTopOf="@id/stats_atvt_bottom_gl">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Tỷ lệ trả lời đúng"
+            android:textStyle="bold"
+            android:layout_marginTop="10dp"
+            android:textSize="22sp"
+            android:background="@android:color/transparent"
+            android:textAlignment="center"
+            android:textColor="#FFC107"
+            android:shadowDx="1"
+            android:shadowDy="1"
+            android:shadowRadius="2"
+            android:shadowColor="@color/second_base_color"
+            />
+
+        <TextView
+            android:id="@+id/stats_atvt_correct_answer_nbr_tv"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textStyle="bold"
+            android:layout_marginTop="50dp"
+            android:textSize="32sp"
+            android:background="@android:color/transparent"
+            android:textAlignment="center"
+            android:textColor="#FFC107"
+            />
+
+    </androidx.cardview.widget.CardView>
 
     <TextView
         android:layout_width="wrap_content"
@@ -42,67 +245,67 @@
         app:layout_constraintRight_toLeftOf="@id/stats_atvt_right_gl"
         app:layout_constraintBottom_toTopOf="@id/stats_atvt_top_gl"
         android:textSize="22sp"
-        android:text="Thống kê học tập"/>
+        android:text="Thống kê học tập" />
 
-    <TextView
-        android:id="@+id/stats_atvt_courses_registered_tv"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        app:layout_constraintTop_toBottomOf="@id/stats_atvt_top_gl"
-        app:layout_constraintLeft_toRightOf="@id/stats_atvt_left_gl"
-        android:text="Tổng số khóa học đã đăng ký: "
-        android:textSize="18sp"
-        android:textColor="@color/base_color"
-        android:textStyle="bold"
-        android:layout_marginTop="120dp"/>
+<!--    <TextView-->
+<!--        android:id="@+id/stats_atvt_courses_registered_tv"-->
+<!--        android:layout_width="wrap_content"-->
+<!--        android:layout_height="wrap_content"-->
+<!--        app:layout_constraintTop_toBottomOf="@id/stats_atvt_top_gl"-->
+<!--        app:layout_constraintLeft_toRightOf="@id/stats_atvt_left_gl"-->
+<!--        android:text="Tổng số khóa học đã đăng ký: "-->
+<!--        android:textSize="18sp"-->
+<!--        android:textColor="@color/base_color"-->
+<!--        android:textStyle="bold"-->
+<!--        android:layout_marginTop="120dp"/>-->
 
-    <TextView
-        android:id="@+id/stats_atvt_courses_attended_tv"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        app:layout_constraintTop_toBottomOf="@id/stats_atvt_courses_registered_tv"
-        app:layout_constraintLeft_toRightOf="@id/stats_atvt_left_gl"
-        android:text="Tổng lần tham gia khóa học: "
-        android:textSize="18sp"
-        android:textColor="@color/base_color"
-        android:textStyle="bold"
-        android:layout_marginTop="10dp"/>
+<!--    <TextView-->
+<!--        android:id="@+id/stats_atvt_courses_attended_tv"-->
+<!--        android:layout_width="wrap_content"-->
+<!--        android:layout_height="wrap_content"-->
+<!--        app:layout_constraintTop_toBottomOf="@id/stats_atvt_courses_registered_tv"-->
+<!--        app:layout_constraintLeft_toRightOf="@id/stats_atvt_left_gl"-->
+<!--        android:text="Tổng lần tham gia khóa học: "-->
+<!--        android:textSize="18sp"-->
+<!--        android:textColor="@color/base_color"-->
+<!--        android:textStyle="bold"-->
+<!--        android:layout_marginTop="10dp"/>-->
 
-    <TextView
-        android:id="@+id/stats_atvt_correct_answer_tv"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        app:layout_constraintTop_toBottomOf="@id/stats_atvt_courses_attended_tv"
-        app:layout_constraintLeft_toRightOf="@id/stats_atvt_left_gl"
-        android:text="Tổng số câu trả lời đúng: "
-        android:textSize="18sp"
-        android:textColor="#158A00"
-        android:textStyle="bold"
-        android:layout_marginTop="10dp"/>
+<!--    <TextView-->
+<!--        android:id="@+id/stats_atvt_correct_answer_tv"-->
+<!--        android:layout_width="wrap_content"-->
+<!--        android:layout_height="wrap_content"-->
+<!--        app:layout_constraintTop_toBottomOf="@id/stats_atvt_courses_attended_tv"-->
+<!--        app:layout_constraintLeft_toRightOf="@id/stats_atvt_left_gl"-->
+<!--        android:text="Tổng số câu trả lời đúng: "-->
+<!--        android:textSize="18sp"-->
+<!--        android:textColor="#158A00"-->
+<!--        android:textStyle="bold"-->
+<!--        android:layout_marginTop="10dp"/>-->
 
-    <TextView
-        android:id="@+id/stats_atvt_wrong_answer_tv"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        app:layout_constraintTop_toBottomOf="@id/stats_atvt_correct_answer_tv"
-        app:layout_constraintLeft_toRightOf="@id/stats_atvt_left_gl"
-        android:text="Tổng số câu trả lời sai: "
-        android:textSize="18sp"
-        android:textColor="@color/wrong_answer_color"
-        android:textStyle="bold"
-        android:layout_marginTop="10dp"/>
+<!--    <TextView-->
+<!--        android:id="@+id/stats_atvt_wrong_answer_tv"-->
+<!--        android:layout_width="wrap_content"-->
+<!--        android:layout_height="wrap_content"-->
+<!--        app:layout_constraintTop_toBottomOf="@id/stats_atvt_correct_answer_tv"-->
+<!--        app:layout_constraintLeft_toRightOf="@id/stats_atvt_left_gl"-->
+<!--        android:text="Tổng số câu trả lời sai: "-->
+<!--        android:textSize="18sp"-->
+<!--        android:textColor="@color/wrong_answer_color"-->
+<!--        android:textStyle="bold"-->
+<!--        android:layout_marginTop="10dp"/>-->
 
-    <TextView
-        android:id="@+id/stats_atvt_correct_answer_nbr_tv"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        app:layout_constraintTop_toBottomOf="@id/stats_atvt_wrong_answer_tv"
-        app:layout_constraintLeft_toRightOf="@id/stats_atvt_left_gl"
-        android:text="Tỷ lệ chính xác: "
-        android:textSize="18sp"
-        android:textColor="#20C103"
-        android:textStyle="bold"
-        android:layout_marginTop="10dp"/>
+<!--    <TextView-->
+<!--        android:id="@+id/stats_atvt_correct_answer_nbr_tv"-->
+<!--        android:layout_width="wrap_content"-->
+<!--        android:layout_height="wrap_content"-->
+<!--        app:layout_constraintTop_toBottomOf="@id/stats_atvt_wrong_answer_tv"-->
+<!--        app:layout_constraintLeft_toRightOf="@id/stats_atvt_left_gl"-->
+<!--        android:text="Tỷ lệ chính xác: "-->
+<!--        android:textSize="18sp"-->
+<!--        android:textColor="#20C103"-->
+<!--        android:textStyle="bold"-->
+<!--        android:layout_marginTop="10dp"/>-->
 
 
 </androidx.constraintlayout.widget.ConstraintLayout>
