@@ -14,7 +14,7 @@
         android:label="@string/app_name"
         android:supportsRtl="true"
         android:theme="@style/Theme.KiwiEnglish"
-        tools:targetApi="31">
+        tools:targetApi="27">
         <activity
             android:name=".Statistics.StatisticActivity"
             android:exported="false" />
