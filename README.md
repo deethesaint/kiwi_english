@@ -1,6 +1,7 @@
 # <h3>Kiwi English: English Learning Application :construction: :fire:</h2>
-<h4>Developed by: Vu Thanh Duong aka deethesaint</h4>
+<h4>Developed by: Vu Thanh Duong aka deethesaint (Abandoned)</h4>
 Here are some basic informations :D
+Đã báo cáo xong và do ý tưởng + code tương đối thảm hại nên ko phát triển tiếp.
 <table>
 <tr>
 <td>Database</td>
